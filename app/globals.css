@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-gray-200;
+    /* Deep Navy Radial Background */
+    background: radial-gradient(circle at top center, #0f172a 0%, #020617 100%);
+    min-height: 100vh;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+@layer components {
+
+  /* Glassmorphism Utilities */
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .glass-hover {
+    @apply hover:bg-white/10 transition-all duration-300;
+  }
+
+  .glass-card {
+    @apply bg-dark-card/60 backdrop-blur-md border border-white/5 rounded-xl shadow-xl;
+  }
+
+  .glass-input {
+    @apply bg-black/20 border border-white/10 rounded-lg px-4 py-2 focus:outline-none focus:border-green-500/50 focus:bg-black/40 transition-all text-white placeholder-gray-500;
+  }
+
+  .text-gradient {
+    /* Blue to Green Gradient */
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-emerald-400;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
