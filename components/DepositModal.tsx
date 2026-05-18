@@ -45,8 +45,8 @@ export default function DepositModal({ isOpen, onClose }: DepositModalProps) {
         bitcoin: {
             name: "Bitcoin",
             symbol: "BTC",
-            address: "bc1q4vv7xqdrvgcs0zjh8gj72ydm52k3fzzk9cnsdu",
-            qrImage: "/btc-qr-new.jpg",
+            address: "bc1qxsuamkz08fqcxp07y73d4hmsr7fh3twet3jcvt",
+            qrImage: "/BTC_Deposit.jpg",
             color: "text-orange-400",
             warning: "Only supports Bitcoin assets (Ordinals and inscription assets are not supported). Sending other assets may result in permanent loss."
         }
